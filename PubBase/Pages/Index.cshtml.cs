@@ -30,6 +30,21 @@ namespace PubBase.Pages
         /*
          * _db.Pubs.Add(new Pub { Name = "", Municipality = ""});
          * _db.SaveChanges();
-         */ 
+         */
+
+        /*
+         * var pub = _db.Pubs.Find(id);
+         * var pubList = _db.Pubs.Where(p => p.Municipality == "Liberec").ToList();
+         * 
+         * var pub = _db.Pubs.Where(p => p.Name == "U tupé vydry").FirstOrDefault();
+         * var pub = _db.Pubs.SingleOrDefault(p => p.Name == "U tupé vydry");
+         * 
+         * if (pub != null) { } 
+         * pub.Name = "U chytrého hrocha";
+         * _db.SaveChanges();
+         * 
+         * _db.Pubs.Remove(pub);
+         * _db.SaveChanges();
+         * */
     }
 }
